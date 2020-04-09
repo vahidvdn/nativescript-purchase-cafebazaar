@@ -66,8 +66,8 @@ public class InAppBillingHelper {
             }
         };
 
-        Intent serviceIntent = new Intent("com.android.vending.billing.InAppBillingService.BIND");
-        serviceIntent.setPackage("com.android.vending");
+        Intent serviceIntent = new Intent("ir.cafebazaar.pardakht.InAppBillingService.BIND");
+        serviceIntent.setPackage("com.farsitel.bazaar");
         _context.bindService(serviceIntent, _serviceConn, Context.BIND_AUTO_CREATE);
     }
 
